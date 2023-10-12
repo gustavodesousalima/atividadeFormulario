@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <form
+    method="get" id="form_data" onload="event.preventDefault()">
+        <h1>Formulário</h1>
+    
+        <label for="name">NOME COMPLETO</label>
+        <input name="name" type="text" id="name">
+    
+        <label for="email">E-MAIL</label>
+        <input name="email" type="text" id="email">
+    
+        <label for="phone">TELEFONE</label>
+        <input name="phone" type="text" id="phone">
+    
+        <select name="selectTypePhone" id="typeOfPhone">
+            <option disabled>Tipo de telefone</option>
+            <option value="Casa">Casa</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Celular">Celular</option>
+        </select>
+    
+        <h2>ENDEREÇO</h2>
+        <div id="containerAddress">
+            <input name="publicPlace" type="text" id="publicPlace" placeholder="Logradouro">
+            <input name="city" type="text" id="city" placeholder="Cidade">
+            <input name="state" type="text" id="state" placeholder="Estado">
+            <input name="ZipCode" type="text" id="ZipCode" placeholder="CEP">
+            <input name="country" type="text" id="country" placeholder="País">
+        </div>
+    
+        <button id="buttonSubmit" type="button" onclick="submeterForm()">Enviar</button>
+    </form>
+    
+</body>
+
+</html>
